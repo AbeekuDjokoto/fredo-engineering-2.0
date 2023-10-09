@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Footer,
   Navbar,
   Section1,
   Section2,
@@ -39,6 +40,7 @@ export const Home = () => {
         {/* Ending of Second Three */}
         <Teams />
       </div>
+      <Footer />
     </header>
   );
 };

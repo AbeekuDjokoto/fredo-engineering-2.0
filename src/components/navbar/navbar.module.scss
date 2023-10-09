@@ -25,6 +25,10 @@ $background: #FDFDFD;
           font-weight: 700;
           line-height: normal;
           font-style: normal;
+          cursor: pointer;
+          &:hover {
+            color: #FFB342;
+          }
         }
     }
     .altButton {

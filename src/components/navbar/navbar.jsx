@@ -2,10 +2,10 @@ import React from "react";
 import logo from "../../assets/icons/logo.ico";
 import classes from "./navbar.module.scss";
 import { MobileNavbar } from "./mobileNavbar";
-
-// import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div className={classes.navigation}>
       <nav className={classes.navbar}>
@@ -15,7 +15,7 @@ export const Navbar = () => {
         <div className="flex justify-between gap-[54px]">
           <ul className={classes.ul}>
             <li>Home</li>
-            <li>Products</li>
+            <li onClick={() => navigate("/products")}>Products</li>
             <li>Gallery</li>
             <li>About Us</li>
             <li>Contact Us</li>

@@ -11,10 +11,8 @@
         position: absolute;
         right: 53px;
         margin-top: 31px;
-    
         .subTitle {
             color: var(--white);
-            font-family: 'Inter';
             font-size: 18px;
             font-style: normal;
             font-weight: 500;
@@ -30,12 +28,13 @@
         }
         .title {
             color: var(--white);
-            font-family: Mulish;
+            font-family: 'Mulish';
             font-size: 60px;
             font-style: normal;
             font-weight: 800;
-            line-height: normal;
+            line-height: 1.1;
             text-align: left;
+            letter-spacing: -0.02em;
         }
         .btn {
             position: relative;
