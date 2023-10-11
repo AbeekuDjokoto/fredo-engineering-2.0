@@ -28,7 +28,7 @@ export const SubNavBar = () => {
             </div>
             <div>
               <h3 className={classes.title}>Call Us</h3>
-              <p className={classes.sub}>+01 569 896 654</p>
+              <p className={classes.sub}>(+233) 20 821 9820</p>
             </div>
           </div>
         </div>
@@ -38,9 +38,9 @@ export const SubNavBar = () => {
         <div className="flex justify-between gap-[54px] items-center">
           <ul className={classes.ul}>
             <li onClick={() => navigate("/")}>Home</li>
-            <li>Products</li>
+            <li onClick={() => navigate("/products")}>Products</li>
             <li>Gallery</li>
-            <li>About Us</li>
+            <li onClick={() => navigate("/about-us")}>About Us</li>
             <li>Contact Us</li>
           </ul>
           <button className={classes.altButton}>get a quote</button>

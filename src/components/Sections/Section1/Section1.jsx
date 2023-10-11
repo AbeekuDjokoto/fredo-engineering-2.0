@@ -12,7 +12,7 @@ export const Section1 = () => {
         </div>
         <div className={styles.headCard}>
           <h3 className={styles.title}>Commercial</h3>
-          <div className="flex flex-col gap-4 text-[#7E7E7E] text-sm font-normal max-w-[562px] w-full">
+          <div className="flex flex-col gap-4 text-[#7E7E7E] text-sm font-light max-w-[562px] w-full">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               incididunt ut labore et dolore magna aliqua. Ut enim ad minimquis

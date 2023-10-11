@@ -14,7 +14,7 @@ export const Section2 = () => {
           </div>
           <div className={styles.headCard}>
             <h3 className={styles.title}>We Provide Your Future</h3>
-            <div className="flex flex-col gap-4 text-[#7E7E7E] text-base font-normal max-w-[600px] w-full mt-3">
+            <div className="flex flex-col gap-4 text-[#7E7E7E] text-base font-light max-w-[600px] w-full mt-3">
               <p>
                 Fredo Engineering and Consultancy Services (FESC) is a
                 specialized engineering technology enterprise that is engaged in
@@ -37,7 +37,7 @@ export const Section2 = () => {
             <h1 className="text-[#FFB342] text-[58px] font-bold">35</h1>
             <p className={styles.year}>Years of Experience</p>
           </div>
-          <ul className="flex flex-col gap-4 text-[#7E7E7E]">
+          <ul className="flex flex-col gap-4 text-[#7E7E7E] font-light">
             <li>- Professionalism.</li>
             <li>- Respect.</li>
             <li>-Team work.</li>

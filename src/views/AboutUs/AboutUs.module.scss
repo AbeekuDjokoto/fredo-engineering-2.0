@@ -1,0 +1,98 @@
+.backgroundBehind {
+    position: relative;
+    img {
+      position: absolute;
+      top: -35px;
+    }
+    .title {
+      position: absolute;
+      left: 50%;
+      top: 150px;
+      transform: translate(-50%, -50%);
+      color: #FFF;
+      text-align: center;
+      font-family: 'Mulish';
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+    }
+  }
+
+  .main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    .smallCard {
+      padding: 9px 16px;
+      align-items: center;
+      gap:9px;
+      background: #F4F4F4;
+      display: flex;
+      max-width: max-content;
+      p{
+        color: #1C2752;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+      .title {
+          color: #1C2752;
+          font-family: 'Mulish';
+          font-size: 45px;
+          font-weight: 800;
+          max-width: 361px;
+          width: 100%;
+      }
+      .subtitle {
+        font-size: 16px;
+        max-width: 600px;
+        width: 100%;
+        color: #7E7E7E;
+        font-weight: 300;
+      }
+
+  }
+
+
+  .tickPoints {
+    color: #1C2752;
+    font-size: 16px;
+  }
+
+  .owner {
+    color: #1C2752;
+    font-family: "Mulish";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .ownerDescription {
+    color: #FFB342;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .btn {
+    background: #FFB342;
+    padding: 20px 33px;
+    color: #1C2752;
+    font-size: 20px;
+    font-weight: 600;
+    &:hover {
+        background: #FFBB54;
+    }
+}
+
+.number {
+  color: var(--textbg);
+  font-family: 'Mulish';
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 151.523%;
+}
