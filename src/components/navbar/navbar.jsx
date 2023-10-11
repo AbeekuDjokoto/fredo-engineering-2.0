@@ -17,7 +17,7 @@ export const Navbar = () => {
             <li>Home</li>
             <li onClick={() => navigate("/products")}>Products</li>
             <li>Gallery</li>
-            <li>About Us</li>
+            <li onClick={() => navigate("/about-us")}>About Us</li>
             <li>Contact Us</li>
           </ul>
           <button className={classes.altButton}>get quotes</button>
