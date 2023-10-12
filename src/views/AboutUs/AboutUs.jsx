@@ -1,11 +1,12 @@
 import React from "react";
-import { Footer, SubNavBar } from "../../components";
+import { Footer, SubNavBar, Teams } from "../../components";
 import ProjectBackground from "../../assets/images/ProjectBackground.png";
 import founder from "../../assets/images/founder.png";
 import headGear from "../../assets/icons/headGear.png";
 import tick from "../../assets/icons/tick.svg";
 
 import classes from "./AboutUs.module.scss";
+import { data } from "./mock";
 
 export const AboutUs = () => {
   return (
@@ -88,6 +89,24 @@ export const AboutUs = () => {
 
         <img src={founder} alt="the founders-fred djokoto" />
       </main>
+
+      <section className="flex items-start max-w-[1200px] mx-auto mt-[150px]  justify-between">
+        {data.map((item, index) => {
+          return (
+            <div key={index} className={classes.card}>
+              <figure className="flex justify-center">
+                <img src={item.img} alt="" />
+              </figure>
+              <h3 className={classes.projects}>{item.projectsCompleted}</h3>
+              <h3 className={classes.title}>{item.title}</h3>
+            </div>
+          );
+        })}
+      </section>
+
+      <section className="flex items-start max-w-[1200px] mx-auto mt-[150px]  justify-between">
+        <Teams />
+      </section>
 
       <Footer />
     </div>

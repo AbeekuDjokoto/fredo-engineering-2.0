@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Teams.module.scss";
 
 import woman from "../../../assets/images/woman.png";
-import classNames from "classnames";
 
 export const Teams = () => {
   return (
