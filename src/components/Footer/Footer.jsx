@@ -13,9 +13,9 @@ export const Footer = () => {
           </p>
         </div>
         <div className={styles.div}>
-          <div className="flex flex-col gap-6">
+          <div className={styles.flexT}>
             <h2>Product</h2>
-            <div className="flex flex-col gap-6">
+            <div className={styles.flexR}>
               <p>Landing Page</p>
               <p>Features</p>
               <p>Documentation</p>
@@ -23,16 +23,16 @@ export const Footer = () => {
               <p>Pricing</p>
             </div>
           </div>
-          <div className="flex flex-col gap-6">
+          <div className={styles.flexT}>
             <h2>Services</h2>
-            <div className="flex flex-col gap-6">
+            <div className={styles.flexR}>
               <p>Fabrication</p>
               <p>Apprentice Training</p>
             </div>
           </div>
-          <div className="flex flex-col gap-6">
+          <div className={styles.flexT}>
             <h2>More</h2>
-            <div className="flex flex-col gap-6">
+            <div className={styles.flexR}>
               <p>Team</p>
               <p>Contact Us</p>
               <p>Get Quote</p>

@@ -7,7 +7,7 @@ export const Section1 = () => {
     <section className={styles.section1}>
       <div>
         <div className={styles.smallCard}>
-          <img src={buildingImage} alt="" className="h-[28px]" />
+          <img src={buildingImage} alt="" className="max-h-[28px] h-full" />
           <p>Professional Main Services</p>
         </div>
         <div className={styles.headCard}>

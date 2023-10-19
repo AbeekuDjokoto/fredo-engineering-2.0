@@ -7,14 +7,14 @@ export const Section2 = () => {
     <section className={styles.section2}>
       <img src={manBuilding} alt="" className="rounded-2xl" />
       <div className="flex flex-col justify-between gap-10">
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 max-w-[669px] w-full">
           <div className={styles.smallCard}>
             <img src={headGear} alt="" className="h-[28px]" />
             <p>Welcome FESC</p>
           </div>
           <div className={styles.headCard}>
             <h3 className={styles.title}>We Provide Your Future</h3>
-            <div className="flex flex-col gap-4 text-[#7E7E7E] text-base font-light max-w-[600px] w-full mt-3">
+            <div className="flex flex-col gap-4 text-[#7E7E7E] text-base font-light mt-3">
               <p>
                 Fredo Engineering and Consultancy Services (FESC) is a
                 specialized engineering technology enterprise that is engaged in

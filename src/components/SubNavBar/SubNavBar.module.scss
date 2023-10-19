@@ -1,62 +1,98 @@
-.yellowCircle {
-    width: 68px;
-    height: 68px;
-    border-radius: 50%;
-    background: #FFB342;
-    display: flex;
-    justify-content: center;
-    img {
-        width: 26px;
-    }
-}
-.title {
-    color: #1C2752;
-    font-family: 'Mulish';
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
 
-.sub {
-    color: #7E7E7E;
-    font-size: 14px;
-}
-
-.navbar {
-    padding: 14px;
-    background: #FFB342;
-    max-width: 911px;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-    ul {
+.desktopNavigation {
+    .yellowCircle {
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        background: #FFB342;
         display: flex;
+        justify-content: center;
+        img {
+            width: 26px;
+        }
+    }
+    .title {
         color: #1C2752;
-        text-align: center;
         font-family: 'Mulish';
         font-size: 14px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        gap: 27px;
-        li {
-            &:hover {
-                color: #fff;
-                cursor: pointer;
-            }
-        }   
-        
     }
-    .altButton {
-        color: #FFF;
-        padding: 15px 30px;
-        background: #1C2752;
-        text-transform: capitalize;
+    .sub {
+        color: #7E7E7E;
         font-size: 14px;
+    }
+    .navbar {
+        padding: 14px;
+        background: #FFB342;
+        max-width: 911px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        ul {
+            display: flex;
+            color: #1C2752;
+            text-align: center;
+            font-family: 'Mulish';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            gap: 27px;
+            li {
+                &:hover {
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }   
+        }
+        .altButton {
+            color: #FFF;
+            padding: 15px 30px;
+            background: #1C2752;
+            text-transform: capitalize;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+}
+
+.MobileSubNavBar {
+    display: none;
+}
+
+@media (max-width: 910px) {
+    .desktopNavigation {
+        display: none;
+    }
+    .MobileSubNavBar {
+        background: #FFB342;
+        position: relative;
+        display: flex;
+        gap: 4px;
+        align-items: center;
+        padding: 24px;
+        margin: none;
+      .mobileDiv {
+        background: #1C2752;
+        display: flex;
+        padding: 2px 5px;
+        align-items: flex-start;
+        gap: 10px;
+        cursor: pointer;
+      }
+      h1 {
+        color: #1C2752;
+        text-align: center;
+        font-family: 'Mulish';
+        font-size: 16px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 300;
         line-height: normal;
+      }
     }
 }

@@ -4,7 +4,7 @@ import workDone from "../../../assets/images/workDone.png";
 export const WhyChooseUs = () => {
   return (
     <section className={styles.section3}>
-      <div className="flex flex-col justify-between gap-10">
+      <div className="flex flex-col justify-between gap-10 max-w-[669px] w-full mx-auto">
         <div>
           <div className={styles.smallCard}>
             <svg
@@ -133,7 +133,7 @@ export const WhyChooseUs = () => {
           </div>
         </div>
       </div>
-      <img src={workDone} alt="" className="rounded-2xl" />
+      <img src={workDone} alt="" className="rounded-2xl mx-auto" />
     </section>
   );
 };
