@@ -28,73 +28,9 @@
   gap: 150px;
 }
 
-  .main{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    @media screen and (max-width: 1126px){
-      justify-content: center;
-      gap: 40px;
-    }
-    @media screen and (max-width: 665px){
-      max-width: 400px;
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      margin: 0 auto;
-    }
-    .smallCard {
-      padding: 9px 16px;
-      align-items: center;
-      gap:9px;
-      background: #F4F4F4;
-      display: flex;
-      max-width: max-content;
-      p{
-        color: #1C2752;
-        font-size: 16px;
-        font-weight: 500;
-      }
-    }
-      .title {
-          color: #1C2752;
-          font-family: 'Mulish';
-          font-size: 2.8rem;
-          font-weight: 800;
-          max-width: 361px;
-          width: 100%;
-      }
-      .subtitle {
-        font-size: 1rem;
-        max-width: 600px;
-        width: 100%;
-        color: #7E7E7E;
-        font-weight: 300;
-      }
-  }
-
-
   .tickPoints {
     color: #1C2752;
     font-size: 16px;
-  }
-
-  .owner {
-    color: #1C2752;
-    font-family: "Mulish";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-  .ownerDescription {
-    color: #FFB342;
-    font-size: 16px;
-    font-weight: 300;
   }
 
   .btn {
@@ -121,9 +57,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 262px));
   gap: 50px;
-  max-width: 1200px;
-  margin: 0 auto;
   align-items: center;
+  justify-content: center;
   @media screen and (max-width: 1128px){
     justify-content: center;
     gap: 40px;
@@ -170,11 +105,3 @@
   }
 }
 
-
-
-.founderImg{
-  @media screen and (max-width: 665px){
-    max-width: 400px;
-    width: 100%;
-  }
-}

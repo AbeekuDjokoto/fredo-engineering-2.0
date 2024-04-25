@@ -3,6 +3,7 @@ import logo from "../../assets/icons/logo.ico";
 import classes from "./navbar.module.scss";
 import { MobileNavbar } from "./mobileNavbar";
 import { useNavigate } from "react-router-dom";
+import { NAVLINKS } from "../../mocks";
 
 export const Navbar = () => {
   const navigate = useNavigate();
@@ -14,11 +15,11 @@ export const Navbar = () => {
         </div>
         <div className="flex justify-between gap-[54px]">
           <ul className={classes.ul}>
-            <li>Home</li>
-            <li onClick={() => navigate("/products")}>Products</li>
-            <li>Gallery</li>
-            <li onClick={() => navigate("/about-us")}>About Us</li>
-            <li onClick={() => navigate("/contact-us")}>Contact Us</li>
+            {NAVLINKS.map((navLink, index) => (
+              <li key={index} onClick={() => navigate(navLink.link.url)}>
+                {navLink.link.text}
+              </li>
+            ))}
           </ul>
           <button className={classes.altButton}>get quotes</button>
         </div>

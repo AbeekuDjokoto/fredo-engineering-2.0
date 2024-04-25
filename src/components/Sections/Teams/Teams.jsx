@@ -5,9 +5,9 @@ import woman from "../../../assets/images/woman.png";
 
 export const Teams = () => {
   return (
-    <section className={styles.section3}>
-      <div className="flex flex-col mx-auto">
-        <div className={styles.smallCard}>
+    <section className="flex flex-col gap-[63px]">
+      <div className="flex flex-col justify-center items-center gap-2">
+        <div className="img-heading ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -29,7 +29,7 @@ export const Teams = () => {
           </svg>
           <p>Our Team</p>
         </div>
-        <h3 className={styles.title}>Meet Our Experts</h3>
+        <h3 className="heading">Meet Our Experts</h3>
       </div>
       <div className={styles.gallery}>
         <article className={styles.card}>

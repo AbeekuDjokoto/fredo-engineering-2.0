@@ -1,12 +1,11 @@
-import styles from "./WhyChooseUs.module.scss";
 import workDone from "../../../assets/images/workDone.png";
 
 export const WhyChooseUs = () => {
   return (
-    <section className={styles.section3}>
-      <div className="flex flex-col justify-between gap-10 max-w-[669px] w-full mx-auto">
+    <section className="flex flex-col-reverse lg:flex-row gap-3 md:gap-12 justify-between lg:items-center">
+      <div className="flex flex-col justify-between gap-10">
         <div>
-          <div className={styles.smallCard}>
+          <div className="img-heading">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -26,21 +25,21 @@ export const WhyChooseUs = () => {
                 fill="#FFB342"
               />
             </svg>
-            <p>Why Choose Us</p>
+            <p className="text-[#1C2752] text-base font-medium">
+              Why Choose Us
+            </p>
           </div>
-          <div className={styles.headCard}>
-            <div className={styles.headContainer}>
-              <h3 className={styles.title}>
-                Few Reasons Why You Should Choose Us
-              </h3>
-              <p className={styles.section3subTitle}>
+          <div className="flex flex-col gap-11">
+            <div className="flex flex-col gap-5">
+              <h3 className="heading">Why You Should Choose Us</h3>
+              <p className="text-[#7E7E7E] text-base font-light">
                 Pellentesque vehicula eros neque, maximus mattis est sagittis
                 Nulla facilisi. In sed pretium metus. Proin pretium id urna sit
                 amet tincidunt. Interdum et malesuada.{" "}
               </p>
             </div>
 
-            <div className="flex flex-col gap-10 justify-center text-[#7E7E7E] text-sm font-normal max-w-[600px] w-full">
+            <div className="flex flex-col gap-10 justify-center text-[#7E7E7E] text-sm font-normal lg:max-w-[600px] w-full">
               <div className="flex items-start gap-[13px]">
                 <div className="max-w-[32px] w-full h-[32px]">
                   <svg
@@ -61,10 +60,10 @@ export const WhyChooseUs = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className={styles.section3Title}>
+                  <p className="text-[#1C2752] text-base font-medium">
                     Machine Design and Fabrication On-the-Job Training
                   </p>
-                  <p className={styles.section3subTitle}>
+                  <p className="text-[#7E7E7E] text-sm font-light">
                     Learn by doing with hands-on experience in machine design
                     and fabrication.
                   </p>
@@ -90,11 +89,11 @@ export const WhyChooseUs = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className={styles.section3Title}>
+                  <p className="text-[#1C2752] text-base font-medium">
                     Apprentice Training in mechanical and electronics
                     engineering
                   </p>
-                  <p className={styles.section3subTitle}>
+                  <p className="text-[#7E7E7E] text-sm font-light">
                     Gain valuable hands-on experience and expert mentorship in
                     both fields for a successful engineering career.
                   </p>
@@ -122,8 +121,10 @@ export const WhyChooseUs = () => {
                 </div>
 
                 <div>
-                  <p className={styles.section3Title}>Affordable Price</p>
-                  <p className={styles.section3subTitle}>
+                  <p className="text-[#1C2752] text-base font-medium">
+                    Affordable Price
+                  </p>
+                  <p className="text-[#7E7E7E] text-sm font-light">
                     Our extensive experience in Milling and Drying solutions
                     comes with a commitment to affordability.
                   </p>
@@ -133,7 +134,7 @@ export const WhyChooseUs = () => {
           </div>
         </div>
       </div>
-      <img src={workDone} alt="" className="rounded-2xl mx-auto" />
+      <img src={workDone} alt="" className="rounded-2xl" />
     </section>
   );
 };

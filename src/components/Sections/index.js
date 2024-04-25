@@ -1,4 +1,4 @@
-export * from "./Section1";
-export * from "./Section2";
+export * from "./ProfessionalServices";
+export * from "./ProvideForTheFuture";
 export * from "./WhyChooseUs";
 export * from "./Teams";

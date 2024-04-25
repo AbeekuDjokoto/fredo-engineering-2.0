@@ -24,18 +24,11 @@
 
   .main{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+    justify-content: center;
+    gap: 40px;
+    padding: 150px 0;
     flex-wrap: wrap;
-    @media screen and (max-width: 1280px){
-        justify-content: center;
-        max-width: 604px;
-        width: 100%;
-        gap: 40px;
-    }
 
     .mainBranch {
       padding: 54px 58px;

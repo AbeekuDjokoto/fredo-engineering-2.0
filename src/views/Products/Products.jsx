@@ -7,19 +7,18 @@ import classes from "./Products.module.scss";
 import { data } from "./mockData";
 
 export const Products = () => {
-  const [horizontal, setHorizontal] = React.useState(true);
+  const [horizontal, setHorizontal] = React.useState(false);
   return (
     <div>
       <SubNavBar />
 
-      <div className="h-[355px]">
-        <div className={classes.backgroundBehind}>
-          <img src={ProjectBackground} alt="" />
-          <h1 className={classes.title}>Our Projects</h1>
-        </div>
+      <div className={classes.backgroundBehind}>
+        <img src={ProjectBackground} alt="" />
+        <h1 className={classes.title}>Our Projects</h1>
       </div>
-      <main className={classes.main}>
-        <div className={classes.grid}>
+
+      <main className="flex flex-col gap-10 py-20 wrapper">
+        <div className="flex gap-2 self-end">
           <div onClick={() => setHorizontal(true)}>
             <img src={rowVertical} alt="" />
           </div>
@@ -27,47 +26,51 @@ export const Products = () => {
             <img src={rowHorizontal} alt="" />
           </div>
         </div>
-      </main>
-      {horizontal ? (
-        <div className="relative flex items-center mt-[200px]">
-          <div
-            id="slider"
-            className="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth"
-          >
-            {data.map((item) => {
-              return (
-                <img
-                  className="w-[496px] inline-block p-[20px] cursor-pointer hover:scale-105 ease-in-out duration-300"
-                  src={item.img}
-                  alt=""
-                />
-              );
-            })}
-          </div>
-        </div>
-      ) : (
-        <div className="relative flex items-center">
-          <div
-            id="slider"
-            className={`${classes.scrollableContainer} scroll scroll-smooth`}
-          >
-            {data.map((item) => {
-              return (
-                <>
-                  <div className={classes.imgContainer}>
+        <div>
+          {horizontal ? (
+            <div className="relative flex items-center">
+              <div
+                id="slider"
+                className="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth"
+              >
+                {data.map((item) => {
+                  return (
                     <img
-                      className="w-[496px] h-100 inline-block p-[20px] cursor-pointer hover:scale-105 ease-in-out duration-300"
+                      className="w-[496px] inline-block p-[20px] cursor-pointer hover:scale-105 ease-in-out duration-300"
                       src={item.img}
                       alt=""
                     />
-                    <p className={classes.description}>{item.description}</p>
-                  </div>
-                </>
-              );
-            })}
-          </div>
+                  );
+                })}
+              </div>
+            </div>
+          ) : (
+            <div className="relative flex items-center">
+              <div
+                id="slider"
+                className={`flex flex-wrap justify-center items-center mx-auto max-h-[800px] h-full overflow-y-scroll scroll scroll-smooth`}
+              >
+                {data.map((item) => {
+                  return (
+                    <>
+                      <div className={classes.imgContainer}>
+                        <img
+                          className="w-[496px] h-100 inline-block p-[20px] cursor-pointer hover:scale-105 ease-in-out duration-300"
+                          src={item.img}
+                          alt=""
+                        />
+                        <p className="text-center text-[#1C2752] font-mulish text-lg font-bold">
+                          {item.description}
+                        </p>
+                      </div>
+                    </>
+                  );
+                })}
+              </div>
+            </div>
+          )}
         </div>
-      )}
+      </main>
 
       <Footer />
     </div>

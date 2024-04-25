@@ -15,102 +15,114 @@ export const AboutUs = () => {
 
       <section className={classes.sectionFlexed}>
         {/* first part */}
-        <div className="h-[355px]">
-          <div className={classes.backgroundBehind}>
-            <img src={ProjectBackground} alt="" />
-            <h1 className={classes.title}>Our Team</h1>
-          </div>
+
+        <div className={classes.backgroundBehind}>
+          <img src={ProjectBackground} alt="" />
+          <h1 className={classes.title}>Our Team</h1>
         </div>
+
         {/* second part */}
-        <main className={classes.main}>
-          <section className="flex flex-col gap-10">
-            <div>
-              <div className={classes.smallCard}>
-                <img src={headGear} alt="" className="h-[28px]" />
-                <p>Welcome to FESC</p>
-              </div>
-              <div className="flex flex-col flex-wrap gap-5">
-                <h3 className={classes.title}>We're Commited to Quality</h3>
-                <p className={classes.subtitle}>
-                  Proactively envisined multimeda based exptis and cross media
-                  growth strategies seamlessly visualized quality a intellectual
-                  capitals withouts superiors collaboration ideas sharing
-                  holistically pontificated installed base portals after
-                  maintainable products.
-                </p>
-              </div>
-            </div>
-
+        <div className="wrapper">
+          <main className="flex flex-col-reverse lg:flex-row justify-between gap-12 lg:items-center">
             <section className="flex flex-col gap-10">
-              <div className="flex justify-between flex-wrap gap-5 max-w-[546px] w-full">
-                <div className="flex flex-col gap-5">
-                  <div className="flex items-center gap-[13px]">
-                    <div className="max-w-[32px] w-full h-[32px]">
-                      <img src={tick} alt="" srcset="" />
-                    </div>
-                    <p className={classes.tickPoints}>
-                      We provide 24/7 service
-                    </p>
-                  </div>
-                  <div className="flex items-center gap-[13px]">
-                    <div className="max-w-[32px] w-full h-[32px]">
-                      <img src={tick} alt="" srcset="" />
-                    </div>
-                    <p className={classes.tickPoints}>Qualified Personnel</p>
-                  </div>
+              <div className="flex flex-col gap-3">
+                <div className="img-heading">
+                  <img src={headGear} alt="" className="h-[28px]" />
+                  <p className="text-[#1C2752] text-base font-medium">
+                    Welcome to FESC
+                  </p>
                 </div>
+                <div className="flex flex-col flex-wrap gap-5">
+                  <h3 className="heading">We're Commited to Quality</h3>
+                  <p className="flex flex-col gap-4 text-[#7E7E7E] text-sm font-light lg:max-w-[562px] w-full">
+                    Proactively envisined multimeda based exptis and cross media
+                    growth strategies seamlessly visualized quality a
+                    intellectual capitals withouts superiors collaboration ideas
+                    sharing holistically pontificated installed base portals
+                    after maintainable products.
+                  </p>
+                </div>
+              </div>
 
-                <div className="flex flex-col gap-5">
-                  <div className="flex items-center gap-[13px]">
-                    <div className="max-w-[32px] w-full h-[32px]">
-                      <img src={tick} alt="" srcset="" />
+              <section className="flex flex-col gap-10">
+                <div className="flex justify-between flex-wrap gap-5 max-w-[546px] w-full">
+                  <div className="flex flex-col gap-5">
+                    <div className="flex items-center gap-[13px]">
+                      <div className="max-w-[32px] w-full h-[32px]">
+                        <img src={tick} alt="" srcset="" />
+                      </div>
+                      <p className={classes.tickPoints}>
+                        We provide 24/7 service
+                      </p>
                     </div>
-                    <p className={classes.tickPoints}>Greate Technology</p>
+                    <div className="flex items-center gap-[13px]">
+                      <div className="max-w-[32px] w-full h-[32px]">
+                        <img src={tick} alt="" srcset="" />
+                      </div>
+                      <p className={classes.tickPoints}>Qualified Personnel</p>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-[13px]">
-                    <div className="max-w-[32px] w-full h-[32px]">
-                      <img src={tick} alt="" srcset="" />
+
+                  <div className="flex flex-col gap-5">
+                    <div className="flex items-center gap-[13px]">
+                      <div className="max-w-[32px] w-full h-[32px]">
+                        <img src={tick} alt="" srcset="" />
+                      </div>
+                      <p className={classes.tickPoints}>Greate Technology</p>
                     </div>
-                    <p className={classes.tickPoints}>35 Years Experiance</p>
+                    <div className="flex items-center gap-[13px]">
+                      <div className="max-w-[32px] w-full h-[32px]">
+                        <img src={tick} alt="" srcset="" />
+                      </div>
+                      <p className={classes.tickPoints}>35 Years Experiance</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div>
-                <h1 className={classes.owner}>Fred Djokoto</h1>
-                <p className={classes.ownerDescription}>Founder of FESC</p>
-              </div>
-              <div className="flex items-center flex-wrap gap-10">
-                <button className={classes.btn}>More About Us</button>
                 <div>
-                  <h3 className="text-xs underline text-[#1C2752]">
-                    For Emergency Fixing or Appointment
-                  </h3>
-                  <p className={classes.number}>(+233) 20 821 9820</p>
+                  <h1 className="text-[#1C2752] text-lg font-bold">
+                    Fred Djokoto
+                  </h1>
+                  <p className="text-base text-[#FFB342] font-light">
+                    Founder of FESC
+                  </p>
                 </div>
-              </div>
+                <div className="flex items-center flex-wrap gap-10">
+                  <button className={classes.btn}>More About Us</button>
+                  <div>
+                    <h3 className="text-xs underline text-[#1C2752]">
+                      For Emergency Fixing or Appointment
+                    </h3>
+                    <p className={classes.number}>(+233) 20 821 9820</p>
+                  </div>
+                </div>
+              </section>
             </section>
-          </section>
 
-          <img
-            src={founder}
-            alt="the founders-fred djokoto"
-            className={classes.founderImg}
-          />
-        </main>
+            <img
+              src={founder}
+              alt="the founders-fred djokoto"
+              className="w-full lg:max-w-[400px]"
+            />
+          </main>
+        </div>
+
         {/* third part */}
-        <section className={classes.gridContainer}>
-          {data.map((item) => {
-            return (
-              <div key={item.id} className={classes.card}>
-                <figure className="flex justify-center">
-                  <img src={item.img} alt="" />
-                </figure>
-                <h3 className={classes.projects}>{item.projectsCompleted}</h3>
-                <h3 className={classes.title}>{item.title}</h3>
-              </div>
-            );
-          })}
-        </section>
+        <div className="wrapper">
+          <section className={classes.gridContainer}>
+            {data.map((item) => {
+              return (
+                <div key={item.id} className={classes.card}>
+                  <figure className="flex justify-center">
+                    <img src={item.img} alt="" />
+                  </figure>
+                  <h3 className={classes.projects}>{item.projectsCompleted}</h3>
+                  <h3 className={classes.title}>{item.title}</h3>
+                </div>
+              );
+            })}
+          </section>
+        </div>
+
         {/* fourth part */}
         <section className="flex items-start max-w-[1200px] mx-auto justify-between">
           <Teams />

@@ -5,9 +5,11 @@ import telephone from "../../assets/icons/telephone.svg";
 import classes from "./SubNavBar.module.scss";
 import { useNavigate } from "react-router-dom";
 import { MobileSubNavBar } from "./mobileSubNavBar";
+import { NAVLINKS } from "../../mocks";
 
 export const SubNavBar = () => {
   const navigate = useNavigate();
+
   return (
     <div>
       <MobileSubNavBar />
@@ -22,7 +24,7 @@ export const SubNavBar = () => {
               </div>
               <div>
                 <h3 className={classes.title}>Mail Us</h3>
-                <p className={classes.sub}>Info@Example.com</p>
+                <p className={classes.sub}>fdjokoto63@gmail.com</p>
               </div>
             </div>
             <div className="flex items-center gap-[11px]">
@@ -41,11 +43,11 @@ export const SubNavBar = () => {
         <nav className={classes.navbar}>
           <div className="flex justify-between gap-[54px] items-center">
             <ul className={classes.ul}>
-              <li onClick={() => navigate("/")}>Home</li>
-              <li onClick={() => navigate("/products")}>Products</li>
-              <li>Gallery</li>
-              <li onClick={() => navigate("/about-us")}>About Us</li>
-              <li onClick={() => navigate("/contact-us")}>Contact Us</li>
+              {NAVLINKS.map((navLink, index) => (
+                <li key={index} onClick={() => navigate(navLink.link.url)}>
+                  {navLink.link.text}
+                </li>
+              ))}
             </ul>
             <button className={classes.altButton}>get a quote</button>
           </div>

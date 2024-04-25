@@ -2,8 +2,8 @@ import React from "react";
 import {
   Footer,
   Navbar,
-  Section1,
-  Section2,
+  ProfessionServices,
+  ProvideForTheFuture,
   Teams,
   WhyChooseUs,
 } from "../../components";
@@ -28,11 +28,11 @@ export const Home = () => {
       </div>
 
       {/* First Section */}
-      <Section1 />
+      <ProfessionServices />
 
-      <div className="flex flex-col gap-[150px]">
+      <div className="flex flex-col gap-20 py-[150px] wrapper">
         {/* Beginnging of Second Section */}
-        <Section2 />
+        <ProvideForTheFuture />
         {/* Ending of Second Section */}
 
         {/* Beginning of Section Three */}
