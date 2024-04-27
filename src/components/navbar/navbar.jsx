@@ -1,14 +1,14 @@
 import React from "react";
 import logo from "../../assets/icons/logo.ico";
 import classes from "./navbar.module.scss";
-import { MobileNavbar } from "./mobileNavbar";
+
 import { useNavigate } from "react-router-dom";
 import { NAVLINKS } from "../../mocks";
 
 export const Navbar = () => {
   const navigate = useNavigate();
   return (
-    <div className={classes.navigation}>
+    <div className="wrapper">
       <nav className={classes.navbar}>
         <div className="max-w-[120px] w-full max-h-[73px] h-full">
           <img src={logo} alt="Fredo Engineering Logo" />
@@ -24,8 +24,6 @@ export const Navbar = () => {
           <button className={classes.altButton}>get quotes</button>
         </div>
       </nav>
-
-      <MobileNavbar />
     </div>
   );
 };

@@ -1,8 +1,5 @@
 export const NAVLINKS = [
   {
-    link: { text: "Home", url: "/" },
-  },
-  {
     link: { text: "Products", url: "/products" },
   },
   {

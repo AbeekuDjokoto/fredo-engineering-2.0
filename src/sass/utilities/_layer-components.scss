@@ -53,6 +53,21 @@
   max-width: max-content;
 }
 
+.navlinks{
+  li{
+    padding: 18px 22px;
+
+  @media (max-width: 640px) {
+    font-size: 16px;
+  }
+
+    button{
+      width: 100%;
+    }
+  }
+}
+
+
 @keyframes slideup {
   0% {
     transform: translateY(10%);

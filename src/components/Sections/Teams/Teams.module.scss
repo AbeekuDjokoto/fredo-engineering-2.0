@@ -23,6 +23,9 @@
         box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
         outline: 1px solid linear-gradient(180deg, rgba(24, 59, 86, 0.00) 0%, rgba(22, 49, 70, 0.45) 45.38%, #152532 100%);
         overflow: hidden;
+        figcaption {
+          display: none;
+        }
         img {
             width: 384px;
             height: 384px;

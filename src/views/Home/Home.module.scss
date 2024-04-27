@@ -11,47 +11,6 @@
         position: absolute;
         right: 53px;
         margin-top: 31px;
-        .subTitle {
-            color: var(--white);
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            background: rgba(255, 255, 255, 0.20);
-            display: flex;
-            align-items: center;
-            max-width: 500px;
-            width: 100%;
-            gap: 9px;
-            height: 45px;
-            padding:8.5px 16px;
-        }
-        .title {
-            color: var(--white);
-            font-family: 'Mulish';
-            font-size: 60px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: 1.1;
-            text-align: left;
-            letter-spacing: -0.02em;
-        }
-        .btn {
-            position: relative;
-            background: #FFB342;
-            padding: 20px 33px;
-            max-width: 191px;
-            width: 100%;
-            color: #1C2752;
-            font-family: 'Inter';
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            &:hover {
-                background: #FFBB54;
-            }
-        }
     }
 }
 
