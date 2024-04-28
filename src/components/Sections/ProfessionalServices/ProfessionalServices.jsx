@@ -10,14 +10,14 @@ export const ProfessionServices = () => {
       <div className="flex flex-col gap-3">
         <div className="img-heading">
           <img src={buildingImage} alt="" className="w-6 h-6" />
-          <p className="text-[#1C2752] text-base font-medium">
+          <p className="text-[#1C2752] text-sm md:text-base font-medium">
             Professional Main Services
           </p>
         </div>
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-2">
-            <h3 className="heading">Commercial</h3>
-            <div className="flex flex-col gap-4 text-[#7E7E7E] text-sm font-light max-w-[562px] w-full">
+            <h3 className="text-base md:text-4xl heading">Commercial</h3>
+            <div className="flex flex-col gap-4 text-[#7E7E7E] text-base font-light max-w-[562px] w-full">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -31,7 +31,7 @@ export const ProfessionServices = () => {
               </p>
             </div>
           </div>
-          <button className="bg-[#FFB342] h-12 px-6 cursor-pointer max-w-[180px] w-full text-[#1C2752] text-sm font-semibold leading-[130%] hover:bg-[#FFBB54]">
+          <button className="border-[#FFB342] border-2 max-w-max px-4 py-4 md:py-3 md:px-6 cursor-pointer md:max-w-[180px] w-full text-[#1C2752] text-sm font-medium hover:bg-[#FFBB54]">
             Read More
           </button>
         </div>

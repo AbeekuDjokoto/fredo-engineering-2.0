@@ -14,21 +14,18 @@ export const AboutUs = () => {
       <SubNavBar />
 
       <section className={classes.sectionFlexed}>
-        {/* first part */}
-
         <div className={classes.backgroundBehind}>
           <img src={ProjectBackground} alt="" />
           <h1 className={classes.title}>Our Team</h1>
         </div>
 
-        {/* second part */}
         <div className="wrapper">
           <main className="flex flex-col-reverse lg:flex-row justify-between gap-12 lg:items-center">
             <section className="flex flex-col gap-10">
               <div className="flex flex-col gap-3">
                 <div className="img-heading">
                   <img src={headGear} alt="" className="h-[28px]" />
-                  <p className="text-[#1C2752] text-base font-medium">
+                  <p className="text-[#1C2752] text-sm md:text-base font-medium">
                     Welcome to FESC
                   </p>
                 </div>
@@ -87,7 +84,9 @@ export const AboutUs = () => {
                   </p>
                 </div>
                 <div className="flex items-center flex-wrap gap-10">
-                  <button className={classes.btn}>More About Us</button>
+                  <button className="border-[#FFB342] border-2 max-w-max px-4 py-4 md:py-3 md:px-6 cursor-pointer md:max-w-[180px] w-full text-[#1C2752] text-sm font-medium hover:bg-[#FFBB54]">
+                    More About Us
+                  </button>
                   <div>
                     <h3 className="text-xs underline text-[#1C2752]">
                       For Emergency Fixing or Appointment

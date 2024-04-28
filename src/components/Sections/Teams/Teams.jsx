@@ -29,7 +29,7 @@ export const Teams = () => {
           </svg>
           <p>Our Team</p>
         </div>
-        <h3 className="heading">Meet Our Experts</h3>
+        <h3 className="text-base md:text-4xl heading">Meet Our Experts</h3>
       </div>
       <div className={styles.gallery}>
         <article className={styles.card}>

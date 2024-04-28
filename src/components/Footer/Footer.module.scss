@@ -1,5 +1,9 @@
 .footer {
     background-image: url('../../assets/images/Footer.png');
     padding: 120px 0px 10px 0;
+    @media (max-width: 910px) {
+      padding: 40px 0;
+       
+    }
 }
 

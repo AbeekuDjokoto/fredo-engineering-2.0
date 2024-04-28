@@ -1,14 +1,6 @@
 export const PRODUCT_LINKS = [
   {
-    text: "Landing Page",
-    url: "",
-  },
-  {
     text: "Features",
-    url: "",
-  },
-  {
-    text: "Documentation",
     url: "",
   },
   {
@@ -39,10 +31,6 @@ export const MORE_LINKS = [
   },
   {
     text: "Contact Us",
-    url: "",
-  },
-  {
-    text: "Get Quote",
     url: "",
   },
 ];

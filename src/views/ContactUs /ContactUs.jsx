@@ -39,18 +39,23 @@ export const ContactUs = () => {
           </div>
 
           <div className={classes.right}>
-            <div className="flex flex-col gap-2">
-              <h1 className="heading">Contact US</h1>
-              <p className="text-sm">
-                We would love to hear from you! Please don't hesitate to reach
-                out to us. Whether you have questions, feedback, or just want to
-                say hello, we're here for you. Your thoughts and inquiries are
-                important to us, and we're excited to connect with you. Feel
-                free to get in touch using the contact information provided
-                below. We look forward to your message!
-              </p>
+            <div className="flex flex-col gap-3">
+              <h1 className="text-base md:text-4xl heading">Contact US</h1>
+
+              <div className="flex flex-col gap-2">
+                <p className="flex flex-col gap-4 text-[#7E7E7E] text-base font-light max-w-[562px] w-full">
+                  We would love to hear from you! Please don't hesitate to reach
+                  out to us. Whether you have questions, feedback, or just want
+                  to say hello, we're here for you. Your thoughts and inquiries
+                  are important to us, and we're excited to connect with you.
+                  Feel free to get in touch using the contact information
+                  provided below. We look forward to your message!
+                </p>
+                <button className="border-[#FFB342] border-2 max-w-max px-4 py-4 md:py-3 md:px-6 cursor-pointer md:max-w-[180px] w-full text-[#1C2752] text-sm font-medium hover:bg-[#FFBB54]">
+                  Contact Us
+                </button>
+              </div>
             </div>
-            <button className={classes.btn}>Contact</button>
           </div>
         </main>
       </div>

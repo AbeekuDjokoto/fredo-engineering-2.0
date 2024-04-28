@@ -12,7 +12,6 @@ export const SubNavBar = () => {
 
   return (
     <div>
-      <MobileSubNavBar />
       <div className={classes.desktopNavigation}>
         {/* TOP */}
         <div className="flex justify-between max-w-[847px] w-full items-center mx-auto py-[58px]">
@@ -53,6 +52,7 @@ export const SubNavBar = () => {
           </div>
         </nav>
       </div>
+      <MobileSubNavBar />
     </div>
   );
 };

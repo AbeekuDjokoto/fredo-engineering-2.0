@@ -34,11 +34,14 @@ $background: #FDFDFD;
         padding: 15px 30px;
         border-radius: 8px;
         border: 2px solid var(--white);
-        font-family: "Inter";
         font-size: 14px;
         font-weight: 700;
         letter-spacing: 0.42px;
         color: var(--white);
+        &:hover{
+          border: 2px solid #FFB342;
+          color: #FFB342;
+        }
     }
   }
 

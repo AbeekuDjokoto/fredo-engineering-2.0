@@ -1,3 +1,4 @@
+import { Checkbox } from "../../../assets/icons/image";
 import workDone from "../../../assets/images/workDone.png";
 
 export const WhyChooseUs = () => {
@@ -5,7 +6,7 @@ export const WhyChooseUs = () => {
     <section className="flex flex-col-reverse lg:flex-row gap-3 md:gap-12 justify-between lg:items-center">
       <div className="flex flex-col justify-between gap-10">
         <div>
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-4">
             <div className="img-heading flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -26,111 +27,60 @@ export const WhyChooseUs = () => {
                   fill="#FFB342"
                 />
               </svg>
-              <p className="text-[#1C2752] text-base font-medium">
+              <p className="text-[#1C2752] text-sm md:text-base font-medium">
                 Why Choose Us
               </p>
             </div>
-            <h3 className="heading">Why You Should Choose Us</h3>
-          </div>
-
-          <div className="flex flex-col gap-11">
-            <div className="flex flex-col gap-5">
-              <p className="text-[#7E7E7E] text-base font-light">
-                Pellentesque vehicula eros neque, maximus mattis est sagittis
-                Nulla facilisi. In sed pretium metus. Proin pretium id urna sit
-                amet tincidunt. Interdum et malesuada.{" "}
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-10 justify-center text-[#7E7E7E] text-sm font-normal lg:max-w-[600px] w-full">
-              <div className="flex items-start gap-[13px]">
-                <div className="max-w-[32px] w-full h-[32px]">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                  >
-                    <circle cx="16" cy="16" r="16" fill="#FFB342" />
-                    <path
-                      d="M23 11L13.9 22L10 17.875"
-                      stroke="#1C2752"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-[#1C2752] text-base font-medium">
-                    Machine Design and Fabrication On-the-Job Training
-                  </p>
-                  <p className="text-[#7E7E7E] text-sm font-light">
-                    Learn by doing with hands-on experience in machine design
-                    and fabrication.
-                  </p>
-                </div>
+            <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-2">
+                <h3 className="text-base md:text-4xl heading">
+                  Why You Should Choose Us
+                </h3>
+                <p className="text-[#7E7E7E] text-base md:text-base font-light">
+                  Pellentesque vehicula eros neque, maximus mattis est sagittis
+                  Nulla facilisi. In sed pretium metus. Proin pretium id urna
+                  sit amet tincidunt. Interdum et malesuada.{" "}
+                </p>
               </div>
-              <div className="flex items-start gap-[13px]">
-                <div className="max-w-[32px] w-full h-[32px]">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                  >
-                    <circle cx="16" cy="16" r="16" fill="#FFB342" />
-                    <path
-                      d="M23 11L13.9 22L10 17.875"
-                      stroke="#1C2752"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+              <div className="flex flex-col gap-10 justify-center text-[#7E7E7E] text-sm font-normal lg:max-w-[600px] w-full">
+                <div className="flex gap-2">
+                  <img src={Checkbox} alt="" />
+                  <div>
+                    <p className="text-[#1C2752] text-sm md:text-base font-medium">
+                      Machine Design and Fabrication On-the-Job Training
+                    </p>
+                    <p className="text-[#7E7E7E] text-sm md:text-base font-light">
+                      Learn by doing with hands-on experience in machine design
+                      and fabrication.
+                    </p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-[#1C2752] text-base font-medium">
-                    Apprentice Training in mechanical and electronics
-                    engineering
-                  </p>
-                  <p className="text-[#7E7E7E] text-sm font-light">
-                    Gain valuable hands-on experience and expert mentorship in
-                    both fields for a successful engineering career.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-[13px]">
-                <div className="max-w-[32px] w-full h-[32px]">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                  >
-                    <circle cx="16" cy="16" r="16" fill="#FFB342" />
-                    <path
-                      d="M23 11L13.9 22L10 17.875"
-                      stroke="#1C2752"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
+                <div className="flex gap-2">
+                  <img src={Checkbox} alt="" />
+                  <div>
+                    <p className="text-[#1C2752] text-sm md:text-base font-medium">
+                      Apprentice Training in mechanical and electronics
+                      engineering
+                    </p>
+                    <p className="text-[#7E7E7E] text-sm md:text-base font-light">
+                      Gain valuable hands-on experience and expert mentorship in
+                      both fields for a successful engineering career.
+                    </p>
+                  </div>
                 </div>
 
-                <div>
-                  <p className="text-[#1C2752] text-base font-medium">
-                    Affordable Price
-                  </p>
-                  <p className="text-[#7E7E7E] text-sm font-light">
-                    Our extensive experience in Milling and Drying solutions
-                    comes with a commitment to affordability.
-                  </p>
+                <div className="flex gap-2">
+                  <img src={Checkbox} alt="" />
+
+                  <div>
+                    <p className="text-[#1C2752] text-sm md:text-base font-medium">
+                      Affordable Price
+                    </p>
+                    <p className="text-[#7E7E7E] text-sm md:text-base font-light">
+                      Our extensive experience in Milling and Drying solutions
+                      comes with a commitment to affordability.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
