@@ -35,7 +35,7 @@ export const ProvideForTheFuture = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-2  max-md:justify-between md:gap-10">
+        <div className="flex items-center gap-2 md:gap-10">
           <div className="max-w-[175px] w-full py-6 bg-[#F4F4F4] text-center flex flex-col justify-center">
             <h1 className="text-[#FFB342] text-5xl font-bold">35</h1>
             <p className="text-[#1C2752] font-mulish text-xl font-medium">

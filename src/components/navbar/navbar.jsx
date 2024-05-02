@@ -10,7 +10,10 @@ export const Navbar = () => {
   return (
     <div className="wrapper">
       <nav className={classes.navbar}>
-        <div className="max-w-[120px] w-full max-h-[73px] h-full">
+        <div
+          className="max-w-[120px] w-full max-h-[73px] h-full cursor-pointer"
+          onClick={() => navigate("/")}
+        >
           <img src={logo} alt="Fredo Engineering Logo" />
         </div>
         <div className="flex justify-between gap-[54px]">

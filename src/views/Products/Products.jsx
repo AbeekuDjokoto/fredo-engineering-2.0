@@ -15,7 +15,7 @@ export const Products = () => {
       <div className="flex flex-col gap-20">
         <div className={classes.backgroundBehind}>
           <img src={ProjectBackground} alt="" />
-          <h1 className={classes.title}>Our Projects</h1>
+          <h1 className={classes.title}>Products</h1>
         </div>
         <main className="flex flex-col gap-10  wrapper">
           <div className="flex gap-2 self-end">

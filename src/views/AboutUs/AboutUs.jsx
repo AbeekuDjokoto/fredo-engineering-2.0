@@ -19,7 +19,7 @@ export const AboutUs = () => {
           <h1 className={classes.title}>Our Team</h1>
         </div>
 
-        <div className="wrapper">
+        <div className="wrapper flex flex-col gap-10 md:gap-20">
           <main className="flex flex-col-reverse lg:flex-row justify-between gap-12 lg:items-center">
             <section className="flex flex-col gap-10">
               <div className="flex flex-col gap-3">
@@ -103,29 +103,34 @@ export const AboutUs = () => {
               className="w-full lg:max-w-[400px]"
             />
           </main>
-        </div>
 
-        {/* third part */}
-        <div className="wrapper">
-          <section className={classes.gridContainer}>
+          <section className="grid grid-col-2 md:grid-cols-3 lg:grid-cols-4 gap-10 items-center justify-center">
             {data.map((item) => {
               return (
-                <div key={item.id} className={classes.card}>
+                <div
+                  key={item.id}
+                  className="p-7 flex flex-col gap-3 text-center bg-[#F4F4F4]"
+                >
                   <figure className="flex justify-center">
-                    <img src={item.img} alt="" />
+                    <img
+                      src={item.img}
+                      alt=""
+                      className="max-w-[76px] h-[76px] w-full"
+                    />
                   </figure>
-                  <h3 className={classes.projects}>{item.projectsCompleted}</h3>
-                  <h3 className={classes.title}>{item.title}</h3>
+                  <div className="flex flex-col gap-2 text-center">
+                    <p className="text-[#1C2752]  font-mulish text-4xl font-bold">
+                      {item.projectsCompleted}
+                    </p>
+                    <p className="text-[#1C2752] text-lg">{item.title}</p>
+                  </div>
                 </div>
               );
             })}
           </section>
-        </div>
 
-        {/* fourth part */}
-        <section className="flex items-start max-w-[1200px] mx-auto justify-between">
           <Teams />
-        </section>
+        </div>
       </section>
 
       <Footer />

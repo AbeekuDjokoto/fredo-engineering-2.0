@@ -12,11 +12,12 @@ import mechanicImage from "../../assets/images/Background.png";
 import styles from "./Home.module.scss";
 import gearImage from "../../assets/images/gear.png";
 import { Close, Hamburger } from "../../assets/icons/image";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../../assets/icons/logo.ico";
 
 export const Home = () => {
   const [openMenu, closeMenu] = React.useState(false);
+  const navigate = useNavigate();
 
   const setClose = () => {
     closeMenu(!openMenu);
@@ -50,7 +51,10 @@ export const Home = () => {
             <h3 className="text-white font-mulish text-4xl font-semibold -tracking-[0.02em]">
               We Are Professional Quality Services
             </h3>
-            <button className="bg-[#FFB342] h-12 px-6 cursor-pointer max-w-[180px] w-full text-[#1C2752] text-sm font-semibold leading-[130%] hover:bg-[#FFBB54]">
+            <button
+              className="bg-[#FFB342] h-12 px-6 cursor-pointer max-w-[180px] w-full text-[#1C2752] text-sm font-semibold leading-[130%] hover:bg-[#FFBB54]"
+              onClick={() => navigate("/services")}
+            >
               Our Services
             </button>
           </div>

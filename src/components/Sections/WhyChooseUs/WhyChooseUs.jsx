@@ -31,7 +31,7 @@ export const WhyChooseUs = () => {
                 Why Choose Us
               </p>
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-10">
               <div className="flex flex-col gap-2">
                 <h3 className="text-base md:text-4xl heading">
                   Why You Should Choose Us
@@ -42,9 +42,9 @@ export const WhyChooseUs = () => {
                   sit amet tincidunt. Interdum et malesuada.{" "}
                 </p>
               </div>
-              <div className="flex flex-col gap-10 justify-center text-[#7E7E7E] text-sm font-normal lg:max-w-[600px] w-full">
+              <div className="flex flex-col gap-2 justify-center text-[#7E7E7E] text-sm font-normal lg:max-w-[600px] w-full">
                 <div className="flex gap-2">
-                  <img src={Checkbox} alt="" />
+                  <img src={Checkbox} alt="" className="h-6" />
                   <div>
                     <p className="text-[#1C2752] text-sm md:text-base font-medium">
                       Machine Design and Fabrication On-the-Job Training
@@ -56,7 +56,7 @@ export const WhyChooseUs = () => {
                   </div>
                 </div>
                 <div className="flex gap-2">
-                  <img src={Checkbox} alt="" />
+                  <img src={Checkbox} alt="" className="h-6" />
                   <div>
                     <p className="text-[#1C2752] text-sm md:text-base font-medium">
                       Apprentice Training in mechanical and electronics
@@ -70,7 +70,7 @@ export const WhyChooseUs = () => {
                 </div>
 
                 <div className="flex gap-2">
-                  <img src={Checkbox} alt="" />
+                  <img src={Checkbox} alt="" className="h-6" />
 
                   <div>
                     <p className="text-[#1C2752] text-sm md:text-base font-medium">

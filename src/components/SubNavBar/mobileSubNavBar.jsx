@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./SubNavBar.module.scss";
+
 import { NavLink } from "react-router-dom";
 import { NavMenu } from "../NavMenu";
 import { Close, Hamburger } from "../../assets/icons/image";
@@ -12,13 +12,18 @@ export const MobileSubNavBar = ({ mobile }) => {
     closeMenu(!openMenu);
   };
   return (
-    <div className={classes.MobileSubNavBar}>
+    <div className="bg-[#FFB342] flex md:hidden">
       <div className="flex items-center gap-7">
-        <div className="flex justify-between md:hidden md:m-auto px-5 py-7">
+        <div className="flex justify-between md:hidden md:m-auto px-2 py-7">
           <NavMenu mobile />
 
           <button className="navbar-hambuger" title="button ">
-            <img onClick={() => closeMenu(!openMenu)} src={Hamburger} alt="" />
+            <img
+              onClick={() => closeMenu(!openMenu)}
+              src={Hamburger}
+              alt=""
+              className="w-[37px] h-[37px]"
+            />
           </button>
         </div>
 
