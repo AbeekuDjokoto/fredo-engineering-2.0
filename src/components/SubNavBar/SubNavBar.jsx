@@ -1,10 +1,10 @@
 import React from "react";
-import logo from "../../assets/icons/logo.ico";
-import envelope from "../../assets/icons/envelope.svg";
-import telephone from "../../assets/icons/telephone.svg";
+import logo from "assets/icons/logo.ico";
+import envelope from "assets/icons/envelope.svg";
+import telephone from "assets/icons/telephone.svg";
 import { useNavigate } from "react-router-dom";
-import { MobileSubNavBar } from "./mobileSubNavBar";
-import { NAVLINKS } from "../../mocks";
+import { MobileSubNavBar } from "./MobileSubNavBar";
+import { NAVLINKS } from "constants/navigation";
 
 export const SubNavBar = () => {
   const navigate = useNavigate();

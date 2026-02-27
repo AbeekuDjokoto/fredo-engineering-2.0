@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "../../assets/icons/logo.ico";
+import logo from "assets/icons/logo.ico";
 import styles from "./Footer.module.scss";
 import { useNavigate } from "react-router";
-import { MORE_LINKS, PRODUCT_LINKS, SERVICES_LINKS } from "../../mocks";
+import { MORE_LINKS, PRODUCT_LINKS, SERVICES_LINKS } from "constants/footer";
 
 export const Footer = () => {
   const navigate = useNavigate();

@@ -1,2 +1,2 @@
 export * from "./SubNavBar";
-export * from "./mobileSubNavBar";
+export * from "./MobileSubNavBar";
