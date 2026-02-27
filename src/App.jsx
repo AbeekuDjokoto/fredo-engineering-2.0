@@ -7,14 +7,10 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products" element={<MainLayout />}>
-          <Route index element={<Products />} />
-        </Route>
-        <Route path="/about-us" element={<MainLayout />}>
-          <Route index element={<AboutUs />} />
-        </Route>
-        <Route path="/contact-us" element={<MainLayout />}>
-          <Route index element={<ContactUs />} />
+        <Route element={<MainLayout />}>
+          <Route path="/products" element={<Products />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Route>
       </Routes>
     </Router>
