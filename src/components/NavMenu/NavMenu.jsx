@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import Logo from "../../assets/icons/logo.ico";
+import Logo from "assets/icons/logo.ico";
 import { NavLink } from "react-router-dom";
 
 export const NavMenu = ({ mobile }) => {

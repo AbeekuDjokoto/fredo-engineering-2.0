@@ -1,5 +1,4 @@
-export * from "./navbar";
-export * from "./Sections";
+export * from "./Navbar";
 export * from "./Footer";
 export * from "./SubNavBar";
 export * from "./NavMenu";
